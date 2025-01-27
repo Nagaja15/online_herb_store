@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Welcome to Online Herb Store</h1>
+
+  <!-- Displaying Login and Register links when the user is not logged in -->
+  <div id="authButtons">
+    <a href="/public/login.html" id="loginLink">Login</a>
+    <a href="/public/register.html" id="registerLink">Register</a>
+  </div>
+
+  <!-- Admin Dashboard (Initially Hidden) -->
+  <div id="adminDashboard" style="display:none;">
+    <h2>Admin Dashboard</h2>
+    <button onclick="addHerb()">Add Herb</button>
+    <button onclick="viewHerbs()">View Herbs</button>
+    <button onclick="addFruit()">Add Fruit</button>
+    <button onclick="addHospital()">Add Hospital</button>
+  </div>
+
+  <!-- User Dashboard (Initially Hidden) -->
+  <div id="userDashboard" style="display:none;">
+    <h2>User Dashboard</h2>
+    <p>Search for diseases and find herbs!</p>
+    <input type="text" id="diseaseSearch" placeholder="Search for a disease">
+    <button onclick="searchForDisease()">Search</button>
+    <div id="searchResults"></div>
+  </div>
+
+  <!-- Logout Button -->
+  <button id="logoutBtn" style="display:none;">Logout</button>
+
+
+
+
+  <!-- Include the script -->
+  <script src="/js/addHerb.js" defer></script>
+  <script src="script.js" defer></script>
+
+
+</body>
+</html>

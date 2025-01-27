@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "67605d76448f3697c8dce86a"
+  },
+  "name": "Nutrition powder",
+  "disease": "weight loss",
+  "Prescription": "This powder consist of mix of all herbs like Papaya,blueberry,pomogranate",
+  "Precautions": "Daily 2 times should drink it .--Morning when stomach is empty  and ---Evening ",
+  "Side effects": "As it is made up of herbs so it doesn't cause any side effects like kidney failure",
+  "Advantages": "For sure the person will loss the weight after 1 month of use",
+  "-->": "Keep away from children"
+},
+{
+  "_id": {
+    "$oid": "67610eb5448f3697c8dce86e"
+  },
+  "name": "Turmeric,Ashwagandha",
+  "disease": "Arthritis",
+  "Precautions": "Add the turmeric into curries and add it on boiling water when ater is startied cooling take cloth and dip it int that turmeric water keep 2min on joints where the paining starts",
+  "-->": "Ashwagandha--It is also known as Indian ginseng it has been using since 100 years for joints treatment",
+  "Advantages": "Since it is made up up of natural materials it doesn't cause any side effects and good to health  and body",
+  "Disadvantages": "Avoid using heavy"
+},
+{
+  "_id": {
+    "$oid": "67611242448f3697c8dce86f"
+  },
+  "name": "Echinacea",
+  "disease": "Wounds,sore throat,stomach upset",
+  "Usage": "It is usually taken as tea or supplement but it can also be applied topically",
+  "-->": "It is a flowering plant frequently used to treat and prevent the common cold , ands by tying the plant flower to a cloth and use it in place of wound it can reduce the plain and cure it at home without side effects or side disesa from that wound",
+  "Prescription": "Use in tea morning either evening for stomach upset use it after taking some food"
+},
+{
+  "_id": {
+    "$oid": "6761145d448f3697c8dce870"
+  },
+  "name": "Ginkgo biloba",
+  "disease": "Memory loss",
+  "Usage": "It has a long history in treating blood disorders and memory issues",
+  "-->": "Ginkgo biloba should take in either morning or evening  but many prefer taking it Morning",
+  "How to take it": "It can be taken along with like mixing some amount  of it on tea OR oral tablet",
+  "Precautions": "Don't take raw , it can be poisonous and Children should use who are below 8years",
+  "side effects": "If younuse heavy mount of it ,it can cause headache, allergic skin,Constipation"
+}]

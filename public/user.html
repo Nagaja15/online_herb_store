@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="user.html">User Dashboard</a></li>
+                <li><a href="login.html" class="logout-button">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="user-info">
+            <h1>Welcome to the User Dashboard</h1>
+            <p id="user-welcome-message">Hello, <span id="username"></span>!</p>
+        </section>
+
+        <section id="search-section">
+            <h2>Search for Disease</h2>
+            <form id="search-form">
+                <label for="search-input">Enter Disease Name:</label>
+                <input type="text" id="search-input" name="search" required placeholder="e.g., Diabetes">
+                <button type="submit">Search</button>
+            </form>
+
+            <div id="search-results">
+                <!-- Search results will be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Herb, Fruit & Hospital Search</p>
+    </footer>
+
+    <script src="public/js/search.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check if the user is logged in
+            const token = localStorage.getItem('token');
+            if (!token) {
+                window.location.href = 'login.html'; // Redirect to login if no token found
+            }
+
+            // Retrieve user data (for example, username) from localStorage or the server
+            const username = localStorage.getItem('username'); // Store username when logging in
+            document.getElementById('username').textContent = username || 'User';
+
+            // Logout functionality
+            const logoutButton = document.querySelector('.logout-button');
+            logoutButton.addEventListener('click', () => {
+                localStorage.clear();
+                alert('Logged out successfully!');
+                window.location.href = 'home.html'; // Redirect to home page after logout
+            });
+        });
+    </script>
+</body>
+
+</html>

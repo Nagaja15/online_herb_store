@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #43af61;
+  color: rgba(241, 241, 241, 0.855);
+  padding: 10px 15px; /* Reduced padding */
+}
+
+header .logo {
+  font-size: 30px; /* Reduced font size */
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px; /* Reduced gap */
+}
+
+header nav ul li {
+  display: inline;
+}
+
+.nav-btn {
+  background-color: white;
+  color: #28a745;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px; /* Reduced padding */
+  cursor: pointer;
+}
+
+/* Content */
+main {
+  padding: 50px; /* Reduced padding */
+  text-align: center;
+  color: #090a0a;
+  font-size: 18px; /* Reduced font size */
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(102, 76, 76, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 15px; /* Reduced padding */
+  border-radius: 10px;
+  width: 250px; /* Reduced width */
+  text-align: center;
+}
+
+.modal-content .close {
+  float: right;
+  font-size: 18px; /* Reduced font size */
+  cursor: pointer;
+}
+
+/* Dashboard */
+#dashboard { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+} 
+nav { 
+  width: 100%; 
+  display: flex; 
+  justify-content: center; 
+  padding: 1rem; 
+} 
+ul {
+  list-style: none; 
+  display: flex; 
+  gap: 0.8rem; /* Reduced gap */
+  padding: 0; 
+  margin: 0; 
+} 
+li { 
+  display: inline;
+} 
+button { 
+  padding: 0.4rem 0.8rem; /* Reduced padding */
+  border: none; 
+  background-color: #28a745;
+  color: white; 
+  cursor: pointer; 
+} 
+button:hover {
+  background-color: #218838;
+}
+
+#dashboard nav ul {
+  display: flex;
+  gap: 10px; /* Reduced gap */
+  padding: 8px; /* Reduced padding */
+  background-color: #006400;
+  color: white;
+}
+
+#dashboard nav ul li {
+  list-style: none;
+  cursor: pointer;
+  padding: 4px 8px; /* Reduced padding */
+  background-color: #28a745;
+  border-radius: 5px;
+}
+
+#dashboardContent {
+  padding: 15px; /* Reduced padding */
+  text-align: center;
+}
+
+/* Styling for Forms */
+.form-box {
+  background-color: #f9f9f9; 
+  border: 2px solid #4caf50; 
+  color: #333; 
+  width: 35%; /* Reduced width */
+  padding: 15px; /* Reduced padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  margin: auto;
+}
+
+.form-box h2 {
+  color: #4caf50; 
+  font-size: 20px; /* Reduced font size */
+  text-align: center;
+  margin-bottom: 15px; /* Reduced margin */
+}
+
+.form-box label {
+  display: block;
+  margin-bottom: 8px; /* Reduced margin */
+  color: #555; 
+  font-weight: bold;
+}
+
+.form-box input {
+  width: 100%; 
+  padding: 8px; /* Reduced padding */
+  margin-bottom: 12px; /* Reduced margin */
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-box button {
+  width: 100%; 
+  padding: 8px; /* Reduced padding */
+  background-color: #4caf50; 
+  color: rgba(255, 254, 254, 0.995); 
+  font-size: 14px; /* Reduced font size */
+}

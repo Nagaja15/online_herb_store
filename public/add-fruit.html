@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Fruit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="admin.html">Admin Dashboard</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="login.html" class="logout-button">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Add New Fruit</h1>
+        <form id="add-fruit-form">
+            <label for="fruit-name">Fruit Name:</label>
+            <input type="text" id="fruit-name" required>
+
+            <label for="health-benefits">Health Benefits:</label>
+            <input type="text" id="health-benefits" required>
+
+            <button type="submit">Add Fruit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fruit Store</p>
+    </footer>
+
+    <script src="./js/addFruits.js"></script>
+</body>
+</html>

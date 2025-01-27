@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="admin.html">Admin Dashboard</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="login.html" class="logout-button">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Hospital Management</h1>
+
+        <!-- Disease Search Form -->
+        <section id="disease-search-section">
+            <h2>Search Hospitals by Disease</h2>
+            <form id="disease-search-form">
+                <input type="text" id="disease-name" placeholder="Enter disease" required />
+                <button type="submit">Search Nearby Hospitals</button>
+            </form>
+            <div id="results"></div>
+        </section>
+
+        <!-- Associate Hospital with Disease -->
+        <section id="associate-hospital-disease-section">
+            <h2>Associate Hospital with Disease</h2>
+            <form id="associate-hospital-disease-form">
+                <input type="number" id="hospital-id" placeholder="Hospital ID" required />
+                <input type="number" id="disease-id" placeholder="Disease ID" required />
+                <button type="submit">Associate</button>
+            </form>
+        </section>
+
+        <!-- Associate User with Hospital -->
+        <section id="associate-user-hospital-section">
+            <h2>Associate User with Hospital</h2>
+            <form id="associate-user-hospital-form">
+                <input type="number" id="user-id" placeholder="User ID" required />
+                <input type="number" id="hospital-id-user" placeholder="Hospital ID" required />
+                <button type="submit">Associate</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hospital Directory</p>
+    </footer>
+
+    <script src="./js/hospitalsnearby.js"></script>
+</body>
+</html>
